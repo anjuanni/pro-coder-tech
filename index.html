@@ -8,6 +8,8 @@
     <!---------------- bootstrap link -------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- ------------font awesome---------- -->
+    <script src="https://kit.fontawesome.com/c01012a7ca.js" crossorigin="anonymous"></script>
     <!-- ----------css link------------ -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -183,12 +185,59 @@
                 </div>
             </div>
         </div>
-        <!-- cards ends -->
-        <div class="d-md-flex justify-content-center rounded-3">
+        <!------------- see more button--------- -->
+        <div class="d-flex justify-content-center rounded-3 mb-5">
             <button class=" text-white btn btn-info mt-5">See more courses</button>
         </div>
     </section>
     <!-- -----------popular section end------------ -->
+
+    <!---------------registar form modal starts----------- -->
+    <section class="container my-5 bg-info border rounded-2 py-5">
+        <div class="d-flex justify-content-around">
+            <div>
+                <h3>Ready to join?</h3>
+                <p>To join with us please click the register button and fill up this form.</p>
+            </div>
+            <!-- -------modal open button -->
+            <div>
+                <button class="btn bg-white text-info fw-semibold" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Register now
+                </button>
+            </div>
+
+            <!------------Modal ----------------->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Fill up this form</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <label for="name">Name: </label>
+                                <input type="text" class="mb-2"><br>
+
+                                <label for="">Email: </label>
+                                <input type="email" name="" id="email" class="mb-2"><br>
+
+                                <label for="password">Password: </label>
+                                <input type="password" name="" id="password">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info">Submit</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------registar form modal ends----------- -->
 
     <!-- -------------frequently asked questions starts------ -->
     <section class="container w-75 m-auto my-5">
@@ -277,7 +326,7 @@
     </section>
     <!-- -------------frequently asked questions ends------ -->
 </main>
-<!-- ---------------companies section------------ -->
+<!-- ---------------companies section starts------------ -->
 <section class="container d-lg-block d-none mb-5">
     <h2 class="text-center mb-4">Trusted by over 800+ companies</h2>
     <div class="row g-5 w-75 mx-auto ">
@@ -299,10 +348,27 @@
         <div class="col-md-2">
             <img class="img-fluid" src="images/company/company-6.png" alt="">
         </div>
+    </div>
+</section>
+<!-- ---------------companies section ends------------ -->
 
+<!-- --------------footer starts here-------------- -->
+<footer class="container-fluid bg-black text-white text-center py-5">
+    <h4>Pro Coder tech</h4>
+    <small class="footer-font pb-5">
+        Office 41, Zawaya Buildin, Ghala Muscat,<br>
+        Sultanate of Oman <br>
+        Privacy Policy | Terms of use</small>
+    <div class="mt-4 pb-4">
+        <i class="fa-brands fa-facebook-f me-5 fs-3"></i>
+        <i class="fa-brands fa-twitter me-5 fs-3"></i>
+        <i class="fa-brands fa-linkedin-in me-5 fs-3"></i>
+        <i class="fa-brands fa-tiktok fs-3"></i>
     </div>
 
-</section>
+</footer>
+
+<!-- --------------footer starts ends--------------------- -->
 
 
 
